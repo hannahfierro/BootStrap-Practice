@@ -19,3 +19,7 @@
 .title{
   background-color: lightgrey
 }
+.carousel-inner{
+  width:700px;
+  height:700px;
+}
