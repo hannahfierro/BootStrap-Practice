@@ -39,7 +39,6 @@
             <div class="col-sm-13 p-1 bg-white text-white">.col</div>
               <div class="col-sm-13 p-1 bg-black text-black">.col</div>
             </div>
-
             <div class="container-fluid-1">
           <h1 class="display-1 text-center"><b>.....................................................................................................................</b></h1>
           </div>
@@ -82,14 +81,6 @@
 </div>
   <div class="container mt-7">
   <div class="container-fluid mt-3">
-    <div class="toast show">
-  <div class="toast-header">
-    Toast Header
-    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-  </div>
-  <div class="toast-body">
-    Some text inside the toast body
-  </div>
   <h2><strong>NOTIFICATIONS:</strong></h2>
   <div class=" dropend">
   <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
@@ -170,8 +161,6 @@
       <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
     </div>
   </div>
-
-  <div class="container mt-3">
   <h2>Phone Battery Percentage</h2>
   <div class="progress">
     <div class="progress-bar bg-success" style="width:40%">
@@ -190,6 +179,18 @@
 <span class="badge bg-secondary">Progress</span>
 <span class="badge bg-success">Info</span>
 </div>
+<button type="button" class="btn btn-primary" data-bs-placement="bottom" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">
+   Toggle popover
+ </button>
+</div>
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+ return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+<div class="container mt-3">
   <h1 class="display-1 text-center"><b>______________________________________</b></h1>
 <div class="container mt-">
 
