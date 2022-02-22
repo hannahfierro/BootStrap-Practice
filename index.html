@@ -39,6 +39,22 @@
             <div class="col-sm-13 p-1 bg-white text-white">.col</div>
               <div class="col-sm-13 p-1 bg-black text-black">.col</div>
             </div>
+            <div class="offcanvas offcanvas-end" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Basic Info</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>My name is Hannah Fierro</p>
+    <p>I am a sophmore</p>
+    <p>I am tired</p>
+  </div>
+</div>
+<div class="container-fluid mt-3">
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Quick Note!
+  </button>
+</div>
             <div class="container-fluid-1">
           <h1 class="display-1 text-center"><b>.....................................................................................................................</b></h1>
           </div>
@@ -179,17 +195,7 @@
 <span class="badge bg-secondary">Progress</span>
 <span class="badge bg-success">Info</span>
 </div>
-<button type="button" class="btn btn-primary" data-bs-placement="bottom" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">
-   Toggle popover
- </button>
-</div>
 
-<script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
- return new bootstrap.Popover(popoverTriggerEl)
-})
-</script>
 <div class="container mt-3">
   <h1 class="display-1 text-center"><b>______________________________________</b></h1>
 <div class="container mt-">
@@ -211,8 +217,8 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       <div class="container-fluid mt-3">
         <div class="row">
           <div class="col p-3">
-            <div class="card" style="width:400px">
-              <img class="card-img-top" src="https://data.whicdn.com/images/348258356/original.jpg" alt="Ny" style="width:90%">
+            <div class="card" style="width:310px">
+              <img class="card-img-top" src="https://data.whicdn.com/images/348258356/original.jpg" alt="Ny" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title">New York City</h4>
                 <p class="card-text">A picture of the city in black and white</p>
@@ -221,7 +227,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             </div>
           </div>
           <div class="col p-3">
-            <div class="card" style="width:400px">
+            <div class="card" style="width:348px">
               <img class="card-img-top" src="https://i.pinimg.com/originals/e5/b1/2c/e5b12cee5b72d2f826b33a3eebb0c56c.jpg" alt="Paris" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title">Paris,France</h4>
@@ -231,8 +237,8 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             </div>
           </div>
           <div class="col p-3">
-            <div class="card" style="width:400px">
-              <img class="card-img-top" src="https://i.pinimg.com/736x/f1/89/94/f18994e14628ae308c6c9f0e24964e61.jpg" alt="London" style="width:90%">
+            <div class="card" style="width:295px">
+              <img class="card-img-top" src="https://i.pinimg.com/736x/f1/89/94/f18994e14628ae308c6c9f0e24964e61.jpg" alt="London" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title">London</h4>
                 <p class="card-text">A picture of the telephone in black and white</p>
@@ -275,7 +281,6 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       </div>
     </div>
   </div>
-
   <div class="card">
     <div class="card-header">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
@@ -319,3 +324,40 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       My goal for marking period three is to get all B's and A's for my main four subjects math,english,science and history. I want to pass Spanish this marking period as well.
       </div>
     </div>
+    <div>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text justify-content-center align-items-center ">Hover over me</a>
+    </div>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1 active">Section 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2 active">Section 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3 active">Section 3</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+    <h1>Section 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+  <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+    <h1>Section 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+  <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+    <h1>Section 3</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
